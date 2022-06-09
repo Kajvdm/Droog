@@ -1,0 +1,24 @@
+{
+  "name": "sksks",
+  "version": "1.0.0",
+  "description": "Save the turtles!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kajdev",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "@lifeomic/axios-fetch": "^3.0.0",
+    "discord.js": "^12.5.3",
+    "node-fetch": "^3.2.4",
+    "nodemon": "^2.0.16",
+    "openweather-apis": "^4.4.2",
+    "postman": "^0.2.0",
+    "postman-request": "^2.88.1-postman.31",
+    "weather-js": "^2.0.0",
+    "whatwg-fetch": "^3.6.2",
+    "ytdl-core": "^4.2.1"
+  }
+}
