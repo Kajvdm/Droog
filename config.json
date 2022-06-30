@@ -1,4 +1,5 @@
 {
     "FILTER_LIST" : ["kanker", "kkr", "kk"],
+    "FILTER_FYSIOSKI" : ["sterre", "olivier", "tjibbe", "dominiek", "tommy", "xamayra", "jill", "sai", "ramon"],
     "PREFIX": "!"
 }

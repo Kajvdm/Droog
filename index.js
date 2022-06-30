@@ -2,14 +2,13 @@ const Discord = require("discord.js");
 const fs = require("fs");
 const bot = new Discord.Client();
 const config = require("./config.json");
-const kReplacements = [
-  "sterre",
-  "sterre",
-  "sterre",
-  "belgie",
-  "justin",
-  "chemo",
-  "twan is 1.69",
+const kReplacements = ["belgie", "justin", "chemo", "twan is 1.69"];
+const fReplacements = [
+  "Je bent zelf zwart!",
+  "Je hebt geluk dat je achter je monitor zit!",
+  "Je hebt kanker",
+  "Ga je vader zoeken",
+  "Zwerver",
 ];
 
 bot.commands = new Discord.Collection();
@@ -32,6 +31,19 @@ bot.on("message", (message) => {
     }
     var repNum = Math.round(getRandomInt(7));
     message.channel.send(kReplacements[repNum]);
+  }
+
+  if (
+    config.FILTER_FYSIOSKI.some((word) =>
+      message.content.toLowerCase().includes(word)
+    )
+  ) {
+    message.delete();
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * max);
+    }
+    var repNum = Math.round(getRandomInt(7));
+    message.channel.send(fReplacements[repNum]);
   }
 });
 
