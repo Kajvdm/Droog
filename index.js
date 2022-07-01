@@ -6,7 +6,7 @@ const kReplacements = ["belgie", "justin", "chemo", "twan is 1.69"];
 const fReplacements = [
   "Je bent zelf donkerwit!",
   "Je hebt geluk dat je achter je monitor zit!",
-  "stavitsterre?",
+  "stavit?",
   "Ga je vader zoeken",
   "Zwerver",
 ];
