@@ -4,9 +4,9 @@ const bot = new Discord.Client();
 const config = require("./config.json");
 const kReplacements = ["belgie", "justin", "chemo", "twan is 1.69"];
 const fReplacements = [
-  "Je bent zelf zwart!",
+  "Je bent zelf donkerwit!",
   "Je hebt geluk dat je achter je monitor zit!",
-  "Je hebt kanker",
+  "stavitsterre?",
   "Ga je vader zoeken",
   "Zwerver",
 ];
@@ -29,7 +29,7 @@ bot.on("message", (message) => {
     function getRandomInt(max) {
       return Math.floor(Math.random() * max);
     }
-    var repNum = Math.round(getRandomInt(7));
+    var repNum = Math.round(getRandomInt(4));
     message.channel.send(kReplacements[repNum]);
   }
 
@@ -42,7 +42,7 @@ bot.on("message", (message) => {
     function getRandomInt(max) {
       return Math.floor(Math.random() * max);
     }
-    var repNum = Math.round(getRandomInt(7));
+    var repNum = Math.round(getRandomInt(5));
     message.channel.send(fReplacements[repNum]);
   }
 });
